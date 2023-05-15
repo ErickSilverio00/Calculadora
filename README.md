@@ -19,7 +19,7 @@ Calculadora completamente funcional, feita por mim, em JavaScript. Utilizei o mo
 
 ## 📁 Acesso ao projeto
 
-[Clique aqui para acessar](https://ericksilverio00.github.io/Adivinhacao/)
+[Clique aqui para acessar](https://ericksilverio00.github.io/Calculadora/)
 
 ## 🛠️ Abrir e rodar o projeto
 
