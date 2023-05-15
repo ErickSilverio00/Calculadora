@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+:root {
+    --bg-color: #000000;
+    --primary-color: #2192FF;
+    --secundary-color: rgba(77, 78, 78, 0.4);
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --first-transition-color: #B7B7B7;
+    --second-transition-color: #73777B;
+    --third-transition-color: #C0DBEA;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    font-weight: 900;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.principal {
+    display: flex;
+    justify-content: right;
+    font-size: 5em;
+}
+
+button {
+    width: 4.5em;
+    height: 4.5em;
+    padding: 0;
+    border: 0;
+    border-radius: 3em;
+    font-size: 1em;
+    margin: 0.4em;
+    cursor: pointer;
+}
+
+.container__primeira-linha {
+    margin-top: 1em;
+}
+
+.ac, .mais-menos-inicio, .porcentagem {
+    background-color: var(--first-transition-color);
+    color: var(--black-color);
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.operacao-divisao, .operacao-vezes, .operacao-menos, .operacao-mais, .igual {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.numero-sete, .numero-oito, .numero-nove, .numero-quatro, .numero-cinco, .numero-seis, .numero-um, 
+.numero-dois, .numero-tres, .numero-zero, .virgula {
+    background-color: var(--secundary-color);
+    color: var(--white-color);
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.numero-zero {
+    width: 10em;
+}
+
+#ac.clicked, #mais-menos-inicio.clicked, #porcentagem.clicked {
+    background-color: var(--white-color);
+}
+
+.operacao-divisao.active, .operacao-vezes.active, .operacao-menos.active, .operacao-mais.active {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.numero-sete.clicked, .numero-oito.clicked, .numero-nove.clicked, .numero-quatro.clicked, 
+.numero-cinco.clicked, .numero-seis.clicked, .numero-um.clicked, .numero-dois.clicked, 
+.numero-tres.clicked, .numero-zero.clicked, .virgula.clicked {
+    background-color: var(--second-transition-color);
+}
+
+.igual {
+    transition: background-color 0.2s;
+}
+
+.igual:active {
+    background-color: var(--third-transition-color);
+}
