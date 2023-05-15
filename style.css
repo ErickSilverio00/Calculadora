@@ -93,3 +93,7 @@ button {
 .igual:active {
     background-color: var(--third-transition-color);
 }
+
+.disable-dbl-tap-zoom {
+    touch-action: manipulation;
+  }
